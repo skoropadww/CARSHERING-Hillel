@@ -506,9 +506,19 @@ button {
 }
 
 .reviews {
-    padding: 100px 0;
-    background-color: #332208;
-    color: #fefefe;
+  padding: 100px 0;
+  background-color: #332208;
+  color: #fefefe;
+  transform: translateY(10%);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition: 0.8s linear 0.0s;
+}
+
+.reviews._active {
+  transform: translateY(0);
+  opacity: 1;
+
 }
 
 .reviews__title {
@@ -560,7 +570,17 @@ button {
 }
 
 .feedback {
-    padding: 100px 0;
+  padding: 100px 0;
+  opacity: 0;
+  transform: translateY(10%);
+  transition-property: transform, opacity;
+  transition: 0.8s linear 0.0s;
+}
+
+.feedback._active {
+  transform: translateY(0);
+  opacity: 1;
+
 }
 
 .feedback__inner {
