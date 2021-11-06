@@ -16,12 +16,12 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="logo" href="/">
-                    <img class="logo__link" src="images/logo.svg" alt="Logo">
+                <a class="logo _anim-items" href="/">
+                    <img class="logo__link _anim-show" src="images/logo.svg" alt="Logo">
                 </a>
                 <nav class="menu">
                     <button class="menu__btn" type="button"></button>
-                    <ul class="menu__list">
+                    <ul class="menu__list _anim-items">
                         <li class="menu__item"><a class="menu__list-link" href="/">О нас</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="/">Автопарк</a></li>
                         <li class="menu__item"><a class="menu__list-link" href="/">Отзывы</a></li>
@@ -29,7 +29,9 @@
                         <li class="menu__item"><a class="menu__list-link" href="/">Контакты</a></li>
                     </ul>
                 </nav>
-                <a class="phone" href="tel:+380999990999">+38 (099) 999 90 90</a>
+                <div class="phone-wrapper _anim-items">
+                  <a class="phone _anim-show" href="tel:+380999990999">+38 (099) 999 90 90</a>
+                </div>
             </div>
         </div>
     </header>
@@ -37,16 +39,16 @@
         <div class="container">
             <div class="top__heading">
                 <div class="top__content">
-                    <h1 class="top__title">
+                    <h1 class="top__title _anim-items">
                         Каршениг в Киеве
                         LUX автомобили
                     </h1>
-                    <p class="top__text">
+                    <p class="top__text _anim-items">
                         Закажи экслюзивный автомобиль через мобильное приложение в любой точке города
                     </p>
-                    <a class="application-btn" href="/">Скачать приложение</a>
+                    <a class="application-btn _anim-items btn--animation" href="/">Скачать приложение</a>
                 </div>
-                <div class="top__slider">
+                <div class="top__slider _anim-items">
                     <div class="top__slider-item">
                         <img class="top__slider-images" src="images/slider/car-01.png" alt="Car 1">
                         <p class="top__slider-text">
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div class="top__bottom">
-                <div class="top__items">
+                <div class="top__items _anim-items">
                     <div class="top__item">
                         <img  class="top__item-img" src="images/icons/icon-01.svg" alt="Car icon">
                         <p class="top__item-text">
@@ -115,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="rent">
+    <section class="rent _anim-items">
         <div class="container">
             <div class="rent__inner">
                 <div class="rent__content">
@@ -164,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <section class="benefits _anim-items">
         <div class="container">
             <h3 class="benefits__title">
                 Преимущества
@@ -324,6 +326,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
