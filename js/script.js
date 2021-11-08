@@ -1,6 +1,8 @@
 window.onload = function () {
 
   const animItems = document.querySelectorAll('._anim-items');
+  let clientWidth = window.innerWidth;
+
 
   if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
@@ -36,5 +38,7 @@ window.onload = function () {
       animOnScroll();
     }, 300);
   }
+
+  AOS.init();
 
 };
